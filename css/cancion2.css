@@ -1,0 +1,99 @@
+/**********************************************************************************************/
+/* Web del romanticiso                                                                        */
+/* Hoja de estilo para cancion del pirata                                                     */
+/* autor: Alejandro Gálvez Madueño                                                            */
+/* version: 2.0                                                                               */
+/* 09 de noviembre de 2022                                                                    */ 
+/**********************************************************************************************/
+
+
+/* ESTILO GENERAL */
+
+@font-face {
+    src: url(../fonts/Calligraffitti/Calligraffitti-Regular.ttf);
+    font-family: escritura;
+
+}
+@font-face {
+   
+    src: url(../fonts/nexa-rust/NexaRustSlab-BlackShadow01.otf);
+    font-family: titulo;
+}
+
+body {
+    font-family: escritura;
+    color: rgb(255, 255, 255);
+    /*vamos a colocar una foto sola de fondo */
+    background-image: url(../imagenes/barcopirata.jpg);
+    /*para que no se repita la imagen */
+    background-repeat: no-repeat;
+    /*para cubrir todo el fondo */
+    background-size: cover;
+    height: 120vh;
+
+
+}
+
+
+
+
+
+h1,h2,h3 {
+    font-family: titulo;
+}
+
+#poema {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.513);   
+    text-align: center; 
+    border-radius: 10%;
+}
+
+.fa {
+    font-size: 200% !important;
+
+}
+
+.fa-facebook-square {
+    color: rgb(66, 103, 178);
+
+}
+
+.fa-twitter {
+    color: rgb(29, 161, 242);
+}
+
+.fa-instagram {
+    color: rgb(188, 42, 141);
+}
+
+
+
+
+
+/* para cambiar el color y quitarle la deconacion al enlace */
+a {
+    font-size: 120%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* pseudoclase como selector :hover (ratón encima) */
+
+a:hover {
+    color: rgb(208, 0, 255);
+    font-size: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

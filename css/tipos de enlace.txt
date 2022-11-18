@@ -1,0 +1,13 @@
+Hay tres tipos de vinculos
+
+	1-EXTERNOS, a otro sitio web
+
+	<a href="http://............." target="_blank"> algo </a>
+
+	2- internos al sitio web
+	
+	<a href="ruta/archivo.thml"> algo </a>	
+
+	3- interno al propio documento
+
+	<a href="#identificador"> algo </a> 

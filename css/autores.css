@@ -1,0 +1,122 @@
+/**********************************************************************************************/
+/* Web del romanticiso                                                                        */
+/* Hoja de estilo para autores                                                                */
+/* autor: Alejandro Gálvez Madueño                                                            */
+/* version: 1.0                                                                               */
+/* 21 de octubre de 2022                                                                      */ 
+/**********************************************************************************************/
+
+
+/* ESTILO GENERAL                                                                              */
+
+
+@font-face {
+    src: url('../fonts/nexa-rust/NexaRustSlab-BlackShadow01.otf');
+    font-family: titulos ;
+
+}
+@font-face {
+    src: url('../fonts/good-times/good\ times\ rg.otf');
+    font-family: textos ;
+
+}
+* {box-sizing:border-box;}
+
+body { /*margin:0; padding: 0;      para quitar el fondillo amarillo cuando esta en tamaño movil */
+    font-family: textos;  
+    text-indent: 1em;
+    text-align: justify;
+    background: rgb(241, 230, 163);
+    /*padding: 3%; */
+    
+
+    }
+
+    #wrapper {
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        margin: 0 auto;
+        padding: 2% 5% 2% 4%;
+
+    } 
+
+
+
+
+h1,h2,h3,h4 {
+    font-family: titulos;
+    border-bottom: 5px solid rgb(255, 0, 0);
+    width: 50%;
+    text-align:center;
+    margin:50px auto;
+    text-indent: 0%;
+
+}
+#espronceda {
+    width: 30%;
+    float: left;
+    margin: 2%;
+
+}
+
+p {
+
+
+
+    text-align: justify;
+}
+
+
+
+
+/* para cambiar el color y quitarle la deconacion al enlace */
+a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+/* pseudoclase como selector :hover (ratón encima) */
+
+a:hover {
+    color: rgb(201, 16, 182);
+    font-size: 120%;
+}
+
+
+
+
+
+
+/*******   MEDIA QUERIES ***********/
+/*******   PARA TABLET   ***********/ 
+
+@media only screen and (width<=1000px){
+
+    #espronceda {width: 50%;}
+    #wrapper {width: 95%;}
+
+}
+
+/*******   PARA MOVIl   ***********/ 
+
+@media only screen and (width<=500px){
+
+    #espronceda {width: 100%;}
+    #wrapper {width: 100%;}
+}
+
+#limpiar {clear: both;} /* hace de tope para que la imagen no baje */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

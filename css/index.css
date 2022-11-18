@@ -1,0 +1,162 @@
+/**********************************************************************************************/
+/* Web del Romanticismo                                                                       */
+/* Hoja de estilo para index.html                                                             */
+/* autor: Alejandro Gálvez Madueño                                                            */
+/* version: 1.0                                                                               */
+/* 11 de noviembre de 2022                                                                    */ 
+/**********************************************************************************************/
+
+
+/* ESTILO GENERAL */
+
+@font-face {
+    src: url(../fonts/Calligraffitti/Calligraffitti-Regular.ttf);
+    font-family: escritura;
+
+}
+@font-face {
+   
+    src: url(../fonts/nexa-rust/NexaRustSlab-BlackShadow01.otf);
+    font-family: titulo;
+
+}
+
+* {box-sizing: border-box;}
+
+
+
+body {
+    margin: 0; /*resetear el por defecto de la ventana*/
+    padding: 0;
+
+    font-family: titulo;
+    background-color: rgba(255, 255, 255, 0.506);
+    
+}
+
+#wrapper {width: 80%;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+
+}
+
+/**********    HERO SECTION OPCION 1: FOTO + TEXTo    *******************/
+
+#hero { 
+    background-image: url(../imagenes/wanderer-above-the-sea-fog-friedrich.jpg);
+    height: 100vh; /*para que se vea mas alla del contenido */
+    background-repeat: no-repeat; /*para que no se repita */
+    background-size: cover; /*para que cubra todo el espacio */
+    background-position: center;  /*pone la foto en el centro cuando se hace mas pequeña la pantalla */
+    font-family: titulo;
+    font-size: 3rem;
+      
+}  
+
+#titulo {
+    padding-left: 5%;
+    padding-top: 4%;  
+}
+
+@media only screen and (width<= 900px) {
+    #hero {
+        font-size: 2.5em;
+    }
+    #wrapper {width: 90%;}
+}
+
+@media only screen and (width<= 600px) {
+    #hero {
+        font-size: 2em;
+    }
+    
+    #wrapper {width: 100%;}
+
+}
+
+
+
+/**********    HERO SECTION OPCION 2: HAIKEI.APP + POSITION    *******************/
+
+#hero2 {
+    background-image: url(../imagenes/poligonos.png);
+    height: 100vh; /*para que se vea mas alla del contenido */
+    background-repeat: no-repeat; /*para que no se repita */
+    background-size: cover; /*para que cubra todo el espacio */
+    background-position: center;  /*pone la foto en el centro cuando se hace mas pequeña la pantalla */
+
+    position: relative; /* el hero se mueve de sitio  */
+
+}
+
+#titulo2 {
+    background-color: rgba(255, 255, 255, 0.498);
+    width: 50%;
+    font-family: titulo;
+    font-size: 3rem;
+    text-align: center;
+
+    /* con estas 4 reglas se consigue poner una caja en el centro */
+    position:absolute; /*  esta fijo dentro de hero*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ; /* para que se ponga el texto en el centro */
+
+
+    /*  para el efecto frosted glass  (el fondo debe de ser blanco y con opacidad por debajo de 0.5  */
+
+    backdrop-filter: blur 8px;
+
+
+}
+
+
+/**********    HERO SECTION OPCION 3: COLOR LISO  + GETWAVES    *******************/
+
+
+
+#hero3 {
+
+    background-color: #0099ff;
+    height: 30vh; /*para que se vea mas alla del contenido */
+    
+    
+    
+    
+    position: relative; /* el hero se mueve de sitio  */
+
+}
+
+#titulo3 {
+    font-family: titulo;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+
+ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+
+#intro{
+    background-color: black;
+    height: 20vh
+    
+}
+
+#introduccion {
+    color: white;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+/**********************************************************************************************/
+/* Web del romanticiso                                                                        */
+/* Hoja de estilo para cancion del pirata                                                     */
+/* autor: Alejandro Gálvez Madueño                                                            */
+/* version: 1.0                                                                               */
+/* 04 de noviembre de 2022                                                                    */ 
+/**********************************************************************************************/
+
+
+/* ESTILO GENERAL                                                                              */
+
+
+@font-face {
+    src: url(../fonts/Calligraffitti/Calligraffitti-Regular.ttf);
+    font-family: escritura;
+
+}
+@font-face {
+   
+    src: url(../fonts/nexa-rust/NexaRustSlab-BlackShadow01.otf);
+    font-family: titulo;
+}
+
+
+body { 
+    font-family: escritura;  
+    text-align: center;
+    font-size: 1.8em;
+    color: rgb(41, 58, 78);
+    background-image: url(../imagenes/backgrounds/gold-pirates-icon-with-dark-blue-background-free-vector.jpg);
+    background-repeat: repeat-y ;
+    background-position: left;
+    background-color: rgb(202, 164, 125);
+    background-size: 25%;
+}
+
+
+h1,h2,h3,h4 {
+    font-family: titulo;
+    width: 50%;
+    text-align:center;
+    margin:50px auto;
+    text-indent: 0%;
+    font-size: 1.5em;
+    color: rgb(41, 58, 78);
+}
+
+#poema {
+    width: 50%;
+    margin-left: 20%;
+    
+}
+
